@@ -20,56 +20,73 @@
 </head>
 
 <body>
-  <div class="container hero">
-    <h2>Hi, I am</h2>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Polina Radahuz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <p>Hi, I am</p>
     <h1>Polina Radahuz</h1>
-    <h3>Web-developer from Ukraine, based in Germany</h3>
-    <a href="contact.html" title="Contact Polina Radahuz" class="link-primary link-contact">Contact me</a>
+    <h3 class="mb-md-3">Web-developer from Ukraine, based in Germany</h3>
+    <a href="contact.html" title="Contact Polina Radahuz" class="btn btn-contact">Contact me</a>
   </div>
 
-  <div class="projects">
+  <div class="projects mt-md-5">
+    <!-- <p class="project-title">Latest projects</p> -->
     <div class="container">
       <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col d-none d-lg-block">
           <img
             src="https://media.self.com/photos/615378c1150f8742ac896749/4:3/w_2560%2Cc_limit/Forearm%2520Plank%2520-%2520Delise_001.jpg"
-            alt="Plank"
-            class="img-fluid rounded d-none d-sm-block">
+            alt="Plank" class="img-fluid rounded">
         </div>
-        <div class="col-md-6">
-          <h2 class="project-name">Plank project</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut accusantium molestiae.</p>
-          <a href="#" class="link-primary">Watch Plank project</a>
-        </div>
-      </div>
-      <div class="row mt-3">
-     
-        <div class="col-md-6">
-          <h2 class="project-name">Weather project</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut accusantium molestiae.</p>
-          <a href="#" class="link-primary link-project">Watch Weather project</a>
-        </div>
-        <div class="col-md-6 mt-2">
-          <img
-            src="src/weather.png"
-            alt="Weather"
-            class="img-fluid rounded d-none d-sm-block">
+        <div class="col project-description">
+          <h2 class="project-name mb-4">Plank project</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
+            dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
+            accusantium molestiae.</p>
+          <a href="#" class="btn-project">Watch Plank project</a>
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-md-6 mt-sm-2">
-          <img
-            src="src/hlegals.png"
-            alt="Plank"
-            class="img-fluid rounded d-none d-sm-block">
+
+        <div class="col project-description">
+          <h2 class="project-name mb-4">Weather project</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
+            dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
+            accusantium molestiae.</p>
+          <a href="#" class="btn-project">Watch Weather project</a>
         </div>
-        <div class="col-md-6">
-          <h2 class="project-name">Hlegals project</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut accusantium molestiae.</p>
-          <a href="#" class="link-primary">Watch Hlegals project</a>
+        <div class="col mt-2  d-none d-lg-block">
+          <img src="src/weather.png" alt="Weather" class="img-fluid rounded">
         </div>
       </div>
-   
+      <div class="row mt-3">
+        <div class="col mt-sm-2  d-none d-lg-block">
+          <img src="src/hlegals.png" alt="Plank" class="img-fluid rounded">
+        </div>
+        <div class="col project-description">
+          <h2 class="project-name mb-4">Hlegals project</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
+            dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
+            accusantium molestiae.</p>
+          <a href="#" class="btn-project">Watch Hlegals project</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
