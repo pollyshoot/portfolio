@@ -1,0 +1,59 @@
+body {
+  font-family: 'Nanum Myeongjo', serif;
+
+margin: 60px auto;
+
+max-width: 900px;
+}
+
+img {
+  max-width: 400px;
+}
+
+h1 {
+  font-style: bold;
+font-weight: 800;
+}
+
+h2 {
+  font-style: bold;
+font-weight: 800;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  /* height: 100vh; */
+
+}
+
+.link-primary {
+  padding: 10px 15px;
+  background-color: #3c3a3e;
+  color: white!important;
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+border-radius: 4px;
+}
+
+.link-contact {
+  margin: 20px auto;
+}
+
+
+
+@media (max-width: 576px) {
+p {
+  text-align: center;
+}
+.project-name {
+  text-align: center;
+}
+.link-primary {
+  margin: 20px auto;
+}
+
+}
