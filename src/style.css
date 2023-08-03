@@ -8,11 +8,15 @@ body {
 
 p {
   line-height: 30px;
+  font-size: 18px;
 }
+
 h1 {
   font-weight: bold;
+  font-size: 64px;
   margin: 0;
 }
+
 h2 {
   font-weight: bold;
   font-size: 48px;
@@ -21,7 +25,6 @@ h2 {
 .hero {
   padding: 200px 20px;
   text-align: center;
-  /* height: 100vh; */
   background: #e1e1e1;
 }
 .hero p {
@@ -69,24 +72,14 @@ h2 {
 }
 
 .project-description {
-  padding: 50px 30px;
+  padding: 20px;
 }
 
 .content-container {
-  margin: 0 auto;
-  max-width: 1200px;
+
   padding: 160px 20px;
 }
 
-.content h1 {
-  font-size: 64px;
-  font-weight: bold;
-}
-
-.content p {
-  line-height: 2;
-  font-size: 18px;
-}
 
 @media (max-width: 992px) {
   .project-description {
@@ -99,10 +92,10 @@ h2 {
     margin: 0 auto;
   }
 
-  .content-container h1 {
+  h1 {
     font-size: 52px;
   }
-  .content-container h3 {
+  h3 {
     font-size: 20px;
   }
 }
@@ -146,6 +139,9 @@ h2 {
 }
 
 @media (max-width: 576px) {
+.hero {
+  padding: 100px 20px;
+}
   .hero h1 {
     font-size: 32px;
   }
