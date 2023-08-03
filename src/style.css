@@ -2,8 +2,6 @@ body {
   font-family: "Nanum Myeongjo", serif;
 }
 
-
-
 .navbar a {
   font-weight: bold;
 }
@@ -36,7 +34,8 @@ h2 {
   font-style: bold;
 }
 
-.btn-project {
+.btn-project,
+.btn-about {
   padding: 10px 15px;
   border: 1px solid #525252;
   color: #525252;
@@ -63,7 +62,6 @@ h2 {
   color: white;
 }
 
-
 .project-title {
   font-size: 28px;
   font-weight: bold;
@@ -74,30 +72,21 @@ h2 {
   padding: 50px 30px;
 }
 
-.about-section {
+.content-container {
   margin: 0 auto;
   max-width: 1200px;
-    padding: 160px 20px;
-
-}
-.about-description {
-
+  padding: 160px 20px;
 }
 
-.about-photo {
-
-}
-
-.about-description h1 {
+.content h1 {
   font-size: 64px;
   font-weight: bold;
 }
 
-.about-description p {
+.content p {
   line-height: 2;
   font-size: 18px;
 }
-
 
 @media (max-width: 992px) {
   .project-description {
@@ -109,12 +98,13 @@ h2 {
     display: block;
     margin: 0 auto;
   }
-  p,
-  .about-section h1,
-  .about-section h3 {
-    text-align: center;
-  }
 
+  .content-container h1 {
+    font-size: 52px;
+  }
+  .content-container h3 {
+    font-size: 20px;
+  }
 }
 @media (max-width: 768px) {
   .project-name {
@@ -127,7 +117,7 @@ h2 {
   }
 
   .hero h1,
-  .about-description h1 {
+  .content h1 {
     font-size: 46px;
   }
   .hero p {
@@ -137,10 +127,22 @@ h2 {
     font-size: 18px;
   }
 
-  .about-description h3 {
+  .content-container {
+    padding: 60px 20px;
+  }
+  .content-container h1,
+  .content-container h3,
+  .content-container p {
+    text-align: center;
+  }
+  .content h3 {
     font-size: 20px;
   }
 
+  .btn-about {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -158,5 +160,15 @@ h2 {
   }
   .project-title {
     font-size: 18px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+  .content h3 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 14px;
   }
 }
