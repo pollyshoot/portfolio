@@ -76,10 +76,8 @@ h2 {
 }
 
 .content-container {
-
   padding: 160px 20px;
 }
-
 
 @media (max-width: 992px) {
   .project-description {
@@ -109,27 +107,22 @@ h2 {
     margin: 20px auto;
   }
 
-  .hero h1,
-  .content h1 {
+  h1 {
     font-size: 46px;
+  }
+  .hero h1 {
+ font-size: 64px;
   }
   .hero p {
     font-size: 24px;
   }
-  .hero h3 {
-    font-size: 18px;
-  }
-
   .content-container {
     padding: 60px 20px;
   }
-  .content-container h1,
-  .content-container h3,
-  .content-container p {
+  h1,
+  h3,
+  p {
     text-align: center;
-  }
-  .content h3 {
-    font-size: 20px;
   }
 
   .btn-about {
@@ -139,18 +132,24 @@ h2 {
 }
 
 @media (max-width: 576px) {
-.hero {
-  padding: 100px 20px;
-}
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h1,
   .hero h1 {
     font-size: 32px;
   }
+  .hero {
+    padding: 100px 20px;
+  }
+
   .hero p {
     font-size: 18px;
   }
-  .hero h3 {
-    font-size: 14px;
-  }
+
   .navbar-brand {
     font-size: 14px;
   }
@@ -158,13 +157,5 @@ h2 {
     font-size: 18px;
   }
 
-  .content h1 {
-    font-size: 32px;
-  }
-  .content h3 {
-    font-size: 16px;
-  }
-  .content p {
-    font-size: 14px;
-  }
+ 
 }
