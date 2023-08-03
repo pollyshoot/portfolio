@@ -79,6 +79,16 @@ h2 {
   padding: 160px 20px;
 }
 
+.content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.content p {
+  font-size: 16px;
+}
 @media (max-width: 992px) {
   .project-description {
     padding: 10px;
@@ -119,9 +129,8 @@ h2 {
   .content-container {
     padding: 60px 20px;
   }
-  h1,
-  h3,
-  p {
+
+  .content {
     text-align: center;
   }
 
