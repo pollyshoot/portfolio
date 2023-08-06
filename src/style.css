@@ -1,11 +1,51 @@
+:root {
+  /* --fa-primary-color: #525252; */
+  --primary-color: #525252;
+  --secondary-color: #e1e1e1;
+  --accent-color: #737373;
+}
 body {
   font-family: "Nanum Myeongjo", serif;
 }
 
-.navbar a {
+.name {
+  
   font-weight: bold;
 }
+navbar {
+  font-weight: bold;
+  background: var(--primary-color);
+  padding: 20px 20px;
+  
+}
+navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 20px;
+  color: white;
 
+}
+navbar .active {
+  -moz-text-shadow:0 0 10px #fff;
+  -webkit-text-shadow:0 0 10px #fff;
+  text-shadow:0 0 15px #fff;
+}
+navbar a:hover {
+  color: black;
+  
+}
+
+.navbar-navigation {
+  gap: 20px;
+}
+/* .navbar a {
+  font-weight: bold;
+} */
+
+.footer a {
+  color: var(--primary-color);
+  font-size: 22px;
+}
 p {
   line-height: 30px;
   font-size: 18px;
@@ -25,7 +65,7 @@ h2 {
 .hero {
   padding: 200px 20px;
   text-align: center;
-  background: #e1e1e1;
+  background: var(--secondary-color);
 }
 .hero p {
   font-size: 36px;
@@ -40,8 +80,8 @@ h2 {
 .btn-project,
 .btn-about {
   padding: 10px 15px;
-  border: 1px solid #525252;
-  color: #525252;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -59,7 +99,7 @@ h2 {
 
 .btn-contact:hover {
   border: 1px solid black;
-  background: #737373;
+  background: var(--accent-color);
   cursor: pointer;
 
   color: white;
@@ -89,6 +129,8 @@ h2 {
 .content p {
   font-size: 16px;
 }
+
+
 @media (max-width: 992px) {
   .project-description {
     padding: 10px;
@@ -165,5 +207,11 @@ h2 {
   .project-title {
     font-size: 18px;
   }
+
+.navbar-navigation a,
+.name a {
+  font-size: 14px;
+}
+
 
 }
