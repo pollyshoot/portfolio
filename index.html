@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400;500;700" rel="stylesheet">
 
   <title>Polina Radahuz, web-dev from UA</title>
 </head>
@@ -22,32 +22,15 @@
 <body>
   <navbar class="d-flex justify-content-between align-items-center">
     <div class="name">
-      <a href="index.html" class="main-logo-link">Polina Radahuz</a>
+      <a href="index.html" class="main-logo-link" title="Home page">Polina Radahuz</a>
     </div>
     <div class="navbar-navigation d-flex align-items-center">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active" title="Home page">Home</a>
+      <a href="about.html" title="About Polina Radahuz">About</a>
+      <a href="work.html" title="Works of Polina Radahuz">Work</a>
+      <a href="contact.html" title="Contact Polina Radahuz">Contact</a>
     </div>
   </navbar>
-  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Polina Radahuz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="work.html">Work</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav> -->
 
   <div class="hero">
     <p>Hi, I am</p>
@@ -61,16 +44,16 @@
     <div class="container">
       <div class="row mt-3">
         <div class="col d-none d-lg-block">
-          <img
-            src="https://media.self.com/photos/615378c1150f8742ac896749/4:3/w_2560%2Cc_limit/Forearm%2520Plank%2520-%2520Delise_001.jpg"
-            alt="Plank" class="img-fluid rounded">
+          <img src="src/plank.png" alt="Plank" class="img-fluid rounded">
         </div>
         <div class="col project-description">
           <h2 class="project-name mb-4">Plank project</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
             dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
             accusantium molestiae.</p>
-          <a href="#" class="btn-project">Watch Plank project</a>
+          <a href="https://scintillating-lollipop-3332db.netlify.app/" class="btn-main" target="_blank"
+            title="Watch Plank Project">Watch Plank
+            project</a>
         </div>
       </div>
       <div class="row mt-3">
@@ -80,7 +63,8 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
             dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
             accusantium molestiae.</p>
-          <a href="#" class="btn-project">Watch Weather project</a>
+          <a href="https://radiant-cajeta-c89ff2.netlify.app/" class="btn-main" target="_blank"
+            title="Watch Weather App">Watch Weather App</a>
         </div>
         <div class="col mt-2  d-none d-lg-block">
           <img src="src/weather.png" alt="Weather" class="img-fluid rounded">
@@ -88,30 +72,39 @@
       </div>
       <div class="row mt-3">
         <div class="col mt-sm-2  d-none d-lg-block">
-          <img src="src/hlegals.png" alt="Plank" class="img-fluid rounded">
+          <img src="src/hlegals.png" alt="Hlegals" class="img-fluid rounded">
         </div>
         <div class="col project-description">
           <h2 class="project-name mb-4">Hlegals project</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio ullam, dignissimos nemo
             dolores quidem accusamus eaque eius neque. Porro ea consequatur id ullam alias obcaecati voluptatum aut
             accusantium molestiae.</p>
-          <a href="#" class="btn-project">Watch Hlegals project</a>
+          <a href="https://pollyshoot.github.io/hlegals-template/" class="btn-main" target="_blank"
+            title="Watch Hlegals Project">Watch Hlegals
+            project</a>
         </div>
       </div>
 
     </div>
   </div>
   <div class="footer container mb-5">
-    <div class="text-center mt-5">
-      <a href="mailto:polynesia.sh@gmail.com">polynesia.sh@gmail.com</a>
+    <div class="text-center mt-5 mb-5">
+      <a href="mailto:polynesia.sh@gmail.com" title="Email to Polina Radahuz">polynesia.sh@gmail.com</a>
     </div>
 
     <div class="text-center mt-4">
-      <a href="https://www.instagram.com/pollyshoot/" target="_blank"  class="m-2"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-      <a href="https://github.com/pollyshoot" target="_blank" class="m-2"><i class="fa-brands fa-github fa-2xl"></i></a>
-      <a href="https://www.linkedin.com/in/polina-radahuz-a0793a46/" target="_blank" class="m-2"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      <a href="https://www.instagram.com/pollyshoot/" target="_blank" class="m-2" title="Instagram of Polina Radahuz"><i
+          class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="https://github.com/pollyshoot" target="_blank" class="m-2"><i class="fa-brands fa-github fa-2xl"
+          title="GitHub of Polina Radahuz"></i></a>
+      <a href="https://www.linkedin.com/in/polina-radahuz-a0793a46/" target="_blank" class="m-2"
+        title="LinkedIn of Polina Radahuz"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
     </div>
   </div>
+
+  <div class="source mb-4">
+    This website was coded by Polina Radahuz, and is <a href="https://github.com/pollyshoot/portfolio" target="_blank"
+      title="Source of the page">open-sourced</a>.
   </div>
 </body>
 

@@ -1,46 +1,37 @@
 :root {
-  /* --fa-primary-color: #525252; */
-  --primary-color: #525252;
+  --primary-color: #686868;
   --secondary-color: #e1e1e1;
   --accent-color: #737373;
 }
 body {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Mali", cursive;
 }
 
 .name {
-  
   font-weight: bold;
 }
 navbar {
   font-weight: bold;
   background: var(--primary-color);
-  padding: 20px 20px;
-  
+  padding: 15px;
 }
 navbar a {
   text-decoration: none;
-  color: var(--primary-color);
   font-size: 20px;
   color: white;
-
 }
 navbar .active {
-  -moz-text-shadow:0 0 10px #fff;
-  -webkit-text-shadow:0 0 10px #fff;
-  text-shadow:0 0 15px #fff;
+  -moz-text-shadow: 0 0 10px #fff;
+  -webkit-text-shadow: 0 0 10px #fff;
+  text-shadow: 0 0 15px #fff;
 }
 navbar a:hover {
   color: black;
-  
 }
 
 .navbar-navigation {
   gap: 20px;
 }
-/* .navbar a {
-  font-weight: bold;
-} */
 
 .footer a {
   color: var(--primary-color);
@@ -77,19 +68,20 @@ h2 {
   font-style: bold;
 }
 
-.btn-project,
-.btn-about {
+.btn-main {
   padding: 10px 15px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-weight: bold;
   text-decoration: none;
-  display: block;
-  max-width: 200px;
+  display: inline-block;
   text-align: center;
   border-radius: 4px;
 }
 
+.btn-main:hover {
+  background-color: var(--secondary-color);
+}
 .btn-contact {
   margin: 20px auto;
   padding: 10px 30px;
@@ -116,7 +108,7 @@ h2 {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 150px 20px 30px;
 }
 
 .content h3 {
@@ -130,6 +122,22 @@ h2 {
   font-size: 16px;
 }
 
+.source {
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+
+.source a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--accent-color);
+}
+
+.project-link:hover {
+  opacity: 0.7;
+}
 
 @media (max-width: 992px) {
   .project-description {
@@ -163,19 +171,17 @@ h2 {
     font-size: 46px;
   }
   .hero h1 {
- font-size: 64px;
+    font-size: 64px;
   }
   .hero p {
     font-size: 24px;
   }
   .content-container {
-    padding: 100px 20px;
+    padding: 80px 20px 30px;
   }
-
   .content {
     text-align: center;
   }
-
   .btn-about {
     display: block;
     margin: 0 auto;
@@ -208,10 +214,8 @@ h2 {
     font-size: 18px;
   }
 
-.navbar-navigation a,
-.name a {
-  font-size: 14px;
-}
-
-
+  .navbar-navigation a,
+  .name a {
+    font-size: 14px;
+  }
 }
